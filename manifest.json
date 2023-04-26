@@ -1,0 +1,16 @@
+{
+  "name": "Bouncing Ball",
+  "version": "1.0.0",
+  "description": "Bouncing Ball Game",
+  "manifest_version": 3,
+  "author": "Ashish Kumar",
+  "icons": {
+    "16": "assets/icon_16.png",
+    "48": "assets/icon_24.png",
+    "128": "assets/icon_128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Bouncing Ball"
+  }
+}

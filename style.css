@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  margin: 40px 20px;
+  border: 1px solid #333;
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.8);
+}
+
+p,
+a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  color: #777;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.info {
+  margin: 14px auto;
+  text-align: justify;
+  font-size: 18px;
+  color: #999;
+}
+
+a {
+  color: #3377ee;
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box {
+  position: relative;
+  height: 400px;
+  width: 380px;
+  display: block;
+  background: linear-gradient(0deg, black, #444444);
+}
+
+.glowing::before {
+  /* content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: glower 20s linear infinite; */
+}
+
+@keyframes glower {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
